@@ -24,18 +24,34 @@ const LETTER = "A";
 const GATE_MIN = 1;
 const GATE_MAX = 1;
 
-/** Enforce the gate: exactly one character, not blank. */
-function assertValid(letter: string): number {
-  const count = Array.from(letter).length;
+/** Count the entry in code points (the gate counts characters, not bytes). */
+function countCharacters(letter: string): number {
+  return Array.from(letter).length;
+}
+
+/** The gate's length rule: exactly GATE_MIN..GATE_MAX characters. */
+function checkLength(letter: string): number {
+  const count = countCharacters(letter);
   if (count < GATE_MIN || count > GATE_MAX) {
     throw new Error(`entry must be exactly ${GATE_MIN} character, got ${count}`);
   }
+  return count;
+}
+
+/** The gate's shape rule: not blank, and one of the two offered letters. */
+function checkShape(letter: string): void {
   if (letter.trim() === "") {
     throw new Error("entry must not be only white space");
   }
   if (letter !== "A" && letter !== "B") {
     throw new Error(`entry must be A (coffee) or B (tea), got ${JSON.stringify(letter)}`);
   }
+}
+
+/** Enforce the gate: exactly one character, not blank, A or B. */
+function assertValid(letter: string): number {
+  const count = checkLength(letter);
+  checkShape(letter);
   return count;
 }
 
