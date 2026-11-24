@@ -55,20 +55,27 @@ function assertValid(letter: string): number {
   return count;
 }
 
-function run(): void {
-  const count = assertValid(LETTER);
-
+/** Where the harness expects the entry file: $MAKEFUN_OUTPUT_DIR/entry.txt. */
+function outputTarget(): string {
   const dir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-  const target = resolve(dir, "entry.txt");
+  return resolve(dir, "entry.txt");
+}
 
-  mkdirSync(dir, { recursive: true });
+/** Write the letter, then re-read it to prove the byte survived the trip. */
+function writeAndVerify(target: string): void {
+  mkdirSync(resolve(target, ".."), { recursive: true });
   writeFileSync(target, LETTER, { encoding: "utf8" });
 
   const reread = readFileSync(target, "utf8");
   if (reread !== LETTER) {
     throw new Error("verification failed: file content differs from the letter");
   }
+}
 
+function run(): void {
+  const count = assertValid(LETTER);
+  const target = outputTarget();
+  writeAndVerify(target);
   console.log(`wrote ${target} (${count} character: ${LETTER})`);
 }
 
