@@ -1,8 +1,8 @@
 # One Letter: Coffee or Tea
 
 [![Competition](https://make.fun/badge/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0.svg)](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0)
-[![Rank](https://make.fun/badge/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0/Samot72/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0-entry/rank.svg)](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0)
-[![Reward](https://make.fun/badge/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0/Samot72/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0-entry/reward.svg)](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0)
+[![Rank](https://make.fun/badge/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0/Samot72/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0-entry-v2/rank.svg)](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0)
+[![Reward](https://make.fun/badge/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0/Samot72/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0-entry-v2/reward.svg)](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0)
 
 Entry for [One Letter: Coffee or Tea](https://make.fun/c/u-rusdyxbt-one-letter-coffee-or-tea-89877fa0) — a make.fun competition where the entry is exactly one letter and nothing else: **A** for coffee, **B** for tea. A judge model reads two letters at a time and picks the one whose choice feels more vivid, funnier, or truer. Prize pool $5 (1st $2, 2nd $2, 3rd $1), free entry.
 
